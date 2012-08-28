@@ -1,4 +1,4 @@
-There're multiply ways of find prime number. The obvious one would be something like this
+There're multiply ways of find prime numbers. The obvious one would be something like this
 
 int limit = 1000;
 
