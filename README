@@ -1,0 +1,21 @@
+There're multiply ways of find prime number. The obvious one would be something like this
+
+int limit = 1000;
+
+for(int i = 2; i < limit; i++){
+    if(isPrime(i))
+        System.out.print(i + " ");
+}
+
+public boolean isPrime(int i){
+    int counter = 2;
+    while(counter < i){
+        if(i % counter  == 0)
+            return false;
+    }
+    return true;
+}
+
+but that's super slow. The worst case running time would be O(n^2)
+
+There're faster way of doing it. They're called Sieve Of Eratosthenes and Sieve of Atkin.
